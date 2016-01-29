@@ -18,11 +18,6 @@ SUBDIR += libelftc
 SUBDIR += libpe
 .endif
 
-# The instruction set analyser.
-.if defined(WITH_ISA) && ${WITH_ISA:tl} == "yes"
-SUBDIR += isa  # ('isa' does not build on all platforms yet).
-.endif
-
 # Build tools after the libraries.
 SUBDIR += addr2line
 SUBDIR += ar
@@ -35,7 +30,6 @@ SUBDIR += nm
 SUBDIR += readelf
 SUBDIR += size
 SUBDIR += strings
-SUBDIR += tools
 
 # Build the test suites.
 .if exists(${.CURDIR}/test) && defined(WITH_TESTS) && ${WITH_TESTS:tl} == "yes"
