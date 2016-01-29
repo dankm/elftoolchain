@@ -20,7 +20,7 @@ SRCS=	elftc_bfdtarget.c			\
 INCS=		libelftc.h
 INCSDIR=	/usr/include
 
-RELEASE=	HEAD		# Change this on release branches.
+RELEASE=	0.7.1		# Change this on release branches.
 
 SHLIB_MAJOR=	1
 
