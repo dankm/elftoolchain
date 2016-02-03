@@ -169,6 +169,8 @@ Significant changes include:
     been added.
   - Bugs in the behavior of the ``-N`` and ``-X`` options were fixed.
   - Nameless global symbols are now handled correctly.
+  - ``SHT_GROUP`` handling has been fixed in **elfcopy** and
+    **strip**.
   - **elfcopy** now supports the conversion of ELF objects to PE images.
 
 * **elfdump**
@@ -261,10 +263,12 @@ Significant changes include:
     some architectures.
   - **readelf** now handles AArch64 types and relocations and
     recognizes the ``RISC-V`` and ``IAMCU`` architectures.
-  - Support for printing FreeBSD, Xen and Linux specific core notes
+  - Support has been added for printing binary notes for FreeBSD, Xen
+    and Linux, and for printing core notes for FreeBSD and Linux.
+  - Support for dumping symbols with the ``STB_GNU_UNIQUE`` binding
     has been added.
-  - Support for dumping symbols with the ``STB_GNU_UNIQUE`` and
-    ``STT_SPARC_REGISTER`` bindings has been added.
+  - Support for dumping symbols with the ``STT_SPARC_REGISTER``
+    register type has been added.
 
 * **size**
 
