@@ -26,6 +26,7 @@ SUBDIR += cxxfilt
 SUBDIR += elfcopy
 SUBDIR += elfdump
 SUBDIR += findtextrel
+SUBDIR += ld
 SUBDIR += nm
 SUBDIR += readelf
 SUBDIR += size
