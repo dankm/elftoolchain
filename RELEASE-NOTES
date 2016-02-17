@@ -305,12 +305,12 @@ The test summary for this release is presented below:
  **Suite** **Tests**  **FreeBSD**     **NetBSD**       **Ubuntu 10.04LTS**
            (32&64bit) (i386 & amd64)  (i386)           (x86_64)
  ========= ========== =============== ================ ===================
- ar        235 & 230  P:235           P:235            P:235
- elfcopy   156        P:156           P:156            P:156
+ ar        235 & 230  P:235 & 230     P:235            P:230
+ elfcopy   160        P:160           P:160            P:160
  elfdump   155        P:155           P:155            P:155
- libdwarf  133        P:133           P:133            P:133
- libelf    1024       P:1020, U:4     P:1020, U:4      P:1020
- libelftc  17         P:17            P:17             P:17
+ libdwarf  153        P:153           P:153            P:153
+ libelf    1030       P:1026, U:4     P:1026, U:4      P:1026, U:4
+ libelftc  16         P:16            P:16             P:16
  nm        183        P:183           P:183            P:183
  ========= ========== =============== ================ ===================
 
